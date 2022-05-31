@@ -11,7 +11,23 @@
 <body>
    <h3>Etch-A-Sketch Game</h3>
 
-   <div id="grid-container"></div>
+   <div id="flex-container">
+      <div class="title"><h1>Sketch Pad</h1></div>
+      <div class="content">
+         <div class="board"></div>
+            <div class="buttons">
+               <button>Black</button>
+               <button>White</button>
+               <button>Random</button>
+               <button>Reset</button>
+         </div>
+         <div>
+            <input type="text" placeholder="Size Of Board" value = "16" onchange="changeSize(this.value)">
+            <button>Set Size</button>
+         </div>
+      </div>
+   </div>
+
 
    <script src="app.js"></script>
 </body>
