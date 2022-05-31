@@ -3,9 +3,18 @@ body {
    text-align: center;  
 }
 
-#grid-container {
-   height: 600px;
-   width: 600px;
-   border: 2px solid black;
+
+
+.board {
+   width: 500px;
+   height: 500px;
+   display: grid;
+   justify-content: center;
    margin: 0 auto;
+}
+
+.buttons {
+   margin: 20px;
+   justify-content: space-between;
+
 }
