@@ -9,20 +9,21 @@
 
 </head>
 <body>
-   <h3>Etch-A-Sketch Game</h3>
+   <h3>Etch-A-Sketch</h3>
 
    <div id="flex-container">
       <div class="title"><h1>Sketch Pad</h1></div>
       <div class="content">
          <div class="board"></div>
             <div class="buttons">
-               <button>Black</button>
-               <button>White</button>
-               <button>Random</button>
-               <button>Reset</button>
+               <button onclick="colorSquare('black')">Black</button>
+               <button onclick="colorSquare('grey')">Grey</button>
+               <button onclick="colorSquare('white')">Eraser</button>
+               <button onclick="colorSquare('random')">Radom</button>
          </div>
          <div>
-            <input type="text" placeholder="Size Of Board" value = "16" onchange="changeSize(this.value)">
+            <div class="footer"></div>
+            <input type="text" placeholder="Size Of Board" value = "" onchange="changeSize(this.value)">
             <button>Set Size</button>
          </div>
       </div>
@@ -30,5 +31,5 @@
 
 
    <script src="app.js"></script>
-</body>
+</body> 
 </html>
