@@ -10,20 +10,23 @@
 </head>
 <body>
    <div id="flex-container">
-      <div class="title"><h3>Sketch Pad</h3></div>
+      <div class="title"><h2>Sketch Pad</h2></div>
       <div class="content">
          <div class="board"></div>
+            <h3>Color Choice:</h3>
             <div class="buttons">
                <button onclick="changeDrawColor('black')">Black</button>
+               <button onclick="changeDrawColor('blue')">Blue</button>
                <button onclick="changeDrawColor('grey')">Grey</button>
-               <button onclick="changeDrawColor('white')">Erase</button>
                <button onclick="changeDrawColor('random')">Random</button>
+               <button onclick="changeDrawColor('white')">Erase</button>
+               
          </div>
          <div>
-            <div class="footer"></div>
             <input type="text" placeholder="Size Of Board" value = "" onchange="changeSize(this.value)">
+            <br>
             <button>Set Size</button>
-            <button id="reset">Reset Board Size</button>
+            <button id="reset">Reset Block Size</button>
          </div>
       </div>
    </div>
